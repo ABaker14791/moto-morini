@@ -1,0 +1,7 @@
+.container {
+  background-color: black;
+  color: aliceblue;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  display: flex;
+  justify-content: space-between;
+}

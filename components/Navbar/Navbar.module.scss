@@ -1,0 +1,58 @@
+@use "../../styles/variables" as v;
+
+.nav {
+  display: flex;
+  background-color: v.$bg-white;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+  border-bottom: 2px solid v.$morini-gold;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  //   margin-right: -24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__button {
+  display: none;
+  color: v.$icon-grey;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
+
+.nav__link {
+  color: v.$main-black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &:active {
+    color: v.$morini-gold;
+  }
+
+  &:hover {
+    color: v.$morini-red;
+  }
+}

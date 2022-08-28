@@ -1,0 +1,35 @@
+@use "../styles/variables" as v;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+
+  @media screen and (max-width: 999px) {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.bike__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.bike__logo {
+  max-width: fit-content;
+}
+
+.bike__button {
+  background-color: v.$morini-gold;
+  color: v.$bg-white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 70%;
+  }
+}

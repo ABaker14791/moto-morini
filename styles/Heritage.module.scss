@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+
+  @media screen and (max-width: 999px) {
+    padding: 0.5rem 1rem;
+  }
+}
