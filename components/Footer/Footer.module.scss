@@ -1,7 +1,28 @@
+@use "../../styles/variables" as v;
+
 .container {
-  background-color: black;
+  background-color: v.$main-black;
   color: aliceblue;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 678px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: v.$bg-white;
+
+  &:hover {
+    color: v.$morini-gold;
+  }
 }

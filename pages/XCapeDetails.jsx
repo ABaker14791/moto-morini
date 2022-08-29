@@ -9,6 +9,7 @@ const XCapeDetails = () => {
       <p>image slider / image gallery</p>
       <p>Press photos</p>
       <p>videos</p>
+      <p>Enquire now button / contact form</p>
     </div>
   );
 };
