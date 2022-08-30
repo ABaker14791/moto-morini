@@ -38,10 +38,10 @@ const Navbar = ({ toggle }) => {
           </a>
         </Link>
 
-        <Link href="/Heritage">
+        <Link href="/heritage">
           <a
             className={
-              currentRoute === "/Heritage"
+              currentRoute === "/heritage"
                 ? `${styles.nav__link} ${styles.active}`
                 : `${styles.nav__link}`
             }
@@ -50,10 +50,10 @@ const Navbar = ({ toggle }) => {
           </a>
         </Link>
 
-        <Link href="/Media">
+        <Link href="/media">
           <a
             className={
-              currentRoute === "/Media"
+              currentRoute === "/media"
                 ? `${styles.nav__link} ${styles.active}`
                 : `${styles.nav__link}`
             }
@@ -62,10 +62,10 @@ const Navbar = ({ toggle }) => {
           </a>
         </Link>
 
-        <Link href="/VisitUs">
+        <Link href="/visit-us">
           <a
             className={
-              currentRoute === "/VisitUs"
+              currentRoute === "/visit-us"
                 ? `${styles.nav__link} ${styles.active}`
                 : `${styles.nav__link}`
             }

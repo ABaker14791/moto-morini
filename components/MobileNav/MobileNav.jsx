@@ -19,21 +19,21 @@ const MobileNav = ({ isOpen, toggle }) => {
             </Link>
           </li>
           <li>
-            <Link href="/Heritage">
+            <Link href="/heritage">
               <a className={styles.link} onClick={toggle}>
                 Heritage
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/Media">
+            <Link href="/media">
               <a className={styles.link} onClick={toggle}>
                 Media
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/VisitUs">
+            <Link href="/visit-us">
               <a className={styles.link} onClick={toggle}>
                 Visit Us
               </a>

@@ -18,6 +18,13 @@
   margin: 80px 0;
 }
 
+.bike__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .bike__logo {
   max-width: fit-content;
 }
