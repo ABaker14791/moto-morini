@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import xCapePhotos from "../xCapeImages";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "../styles/xCapeDetails.module.scss";
 
 const XCapeDetails = () => {
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
+
   return (
     <div>
-      <motion.div className={styles.carousel}>
-        <motion.div className={styles.innerCarousel}>
+      <motion.div
+        ref={carousel}
+        className={styles.carousel}
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div
+          className={styles.innerCarousel}
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+        >
           {xCapePhotos.map((xCapePhoto) => {
             return (
-              <motion.div className={styles.carousel__item}>
+              <motion.div className={styles.carousel__item} key={xCapePhoto}>
                 <Image src={xCapePhoto} />
               </motion.div>
             );

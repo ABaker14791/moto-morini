@@ -1,4 +1,4 @@
-import image1 from "./public/assets/product-galley/xCape_1.jpeg";
+// import image1 from "./public/assets/product-galley/xCape_1.jpeg";
 import image2 from "./public/assets/product-galley/xCape_2.jpeg";
 import image3 from "./public/assets/product-galley/xCape_3.jpeg";
 import image4 from "./public/assets/product-galley/xCape_4.jpeg";
@@ -16,7 +16,7 @@ import image15 from "./public/assets/product-galley/xCape_15.jpeg";
 import image16 from "./public/assets/product-galley/xCape_16.jpeg";
 
 export default [
-  image1,
+  // image1,
   image2,
   image3,
   image4,

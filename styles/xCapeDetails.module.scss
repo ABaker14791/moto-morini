@@ -1,8 +1,27 @@
 .carousel__item {
-  max-width: 90vw;
+  min-width: 30rem;
+  width: 30rem;
+  padding: 40px;
+
+  span img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    pointer-events: none;
+  }
 }
 
-// .innerCarousel {
-//   display: flex;
-//   justify-content: center;
-// }
+.innerCarousel {
+  display: flex;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+
+  @media screen and (max-width: 999px) {
+    max-width: 90%;
+  }
+}
