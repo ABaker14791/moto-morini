@@ -33,9 +33,21 @@ const XCapeDetails = () => {
           })}
         </motion.div>
       </motion.div>
+      <div>
+        <li>7″ Colour TFT Dash</li>
+        <li>Gold Spoked Wheels</li>
+        <li>Music & Phone Connectivity</li>
+        <li>Double USB Charger</li>
+        <li>LED Lights</li>
+        <li>Marzocchi Forks</li>
+        <li>Brembo Brakes</li>
+        <li>Bosch EFI</li>
+        <li>Pirelli Tyres</li>
+        <li>Switchable ABS</li>
+      </div>
 
       <p>Bike details page</p>
-      <p>models</p>
+      <p>editions / colors</p>
       <p>specs</p>
       <p>image slider / image gallery</p>
       <p>Press photos</p>

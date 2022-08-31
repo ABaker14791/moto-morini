@@ -7,7 +7,7 @@ import ContactForm from "../components/ContactForm/ContactForm";
 const VisitUs = () => {
   return (
     <div className={styles.container}>
-      VisitUs
+      MAP
       <ContactForm />
     </div>
   );

@@ -28,15 +28,25 @@ const ContactForm = () => {
   return (
     <>
       <form ref={form} onSubmit={sendEmail} className={styles.contact__form}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
+        <h3>Get in touch</h3>
+        <p>Enter yout Email below and we shall get back to you.</p>
+        <div className={styles.contact__formGroup}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+        </div>
+
+        <div className={styles.contact__formGroup}>
+          <label>Email</label>
+          <input type="email" name="user_email" />
+        </div>
+
+        <div className={styles.contact__formGroup}>
+          <label>Message</label>
+          <textarea name="message" />
+        </div>
+
+        <input className={styles.contact__button} type="submit" value="Send" />
       </form>
-      <p>Map</p>
     </>
   );
 };
