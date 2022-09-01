@@ -27,7 +27,7 @@ const XCapeDetails = () => {
           {xCapePhotos.map((xCapePhoto) => {
             return (
               <motion.div className={styles.carousel__item} key={xCapePhoto}>
-                <Image src={xCapePhoto} />
+                <Image src={xCapePhoto} alt="x-cape gallery" />
               </motion.div>
             );
           })}
