@@ -17,7 +17,12 @@ const Navbar = ({ toggle }) => {
       <div className="nav__logo">
         <Link href="/">
           <a>
-            <Image src={Logo} width="140px" height="80px" />
+            <Image
+              src={Logo}
+              width="140px"
+              height="80px"
+              alt="moto morini west yorkshire"
+            />
           </a>
         </Link>
       </div>
