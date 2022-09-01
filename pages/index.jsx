@@ -17,7 +17,7 @@ import xCapeLogo from "../public/assets/x_cape_logo.png";
 import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
 // Bike images
 import seiemmezzoImage from "../public/assets/moto-morini_05_seiemmezzo-bianca-lato-sx-34.jpeg";
-import xCapeImage from "../public/assets/x-Cape_index.jpeg";
+import xCapeImage from "../public/assets/X-Cape_index.jpeg";
 
 const index = () => {
   return (
