@@ -26,16 +26,16 @@ const MobileNav = ({ isOpen, toggle }) => {
             </Link>
           </li>
           <li>
-            <Link href="/media">
+            <Link href="/about">
               <a className={styles.link} onClick={toggle}>
-                Media
+                About Us
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/visit-us">
+            <Link href="/contact">
               <a className={styles.link} onClick={toggle}>
-                Visit Us
+                Contact Us
               </a>
             </Link>
           </li>

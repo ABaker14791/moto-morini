@@ -2,15 +2,31 @@
 
 .nav {
   display: flex;
+  flex-direction: column;
   background-color: v.$bg-white;
-  height: 80px;
-  justify-content: space-between;
+  // height: 180px;
+  justify-content: center;
+  align-items: center;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
   border-bottom: 2px solid v.$morini-gold;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
+  }
+}
+
+.nav__preHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  margin-bottom: -30px;
+  // margin: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
 

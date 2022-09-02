@@ -4,7 +4,7 @@ import styles from "../styles/VisitUs.module.scss";
 // Components
 import ContactForm from "../components/ContactForm/ContactForm";
 
-const VisitUs = () => {
+const contact = () => {
   return (
     <div className={styles.container}>
       MAP
@@ -13,4 +13,4 @@ const VisitUs = () => {
   );
 };
 
-export default VisitUs;
+export default contact;

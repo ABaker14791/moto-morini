@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../styles/Media.module.scss";
 
-const Media = () => {
+const Contact = () => {
   return <div className={styles.container}>Media</div>;
 };
 
-export default Media;
+export default Contact;

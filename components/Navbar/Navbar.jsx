@@ -14,13 +14,17 @@ const Navbar = ({ toggle }) => {
 
   return (
     <div className={styles.nav}>
-      <div className="nav__logo">
+      <div className={styles.nav__preHeader}>
+        <p>AKA Automotive</p>
+        <p>01274&nbsp;583903</p>
+      </div>
+      <div className={styles.nav__logo}>
         <Link href="/">
           <a>
             <Image
               src={Logo}
-              width="140px"
-              height="80px"
+              width="280px"
+              height="160px"
               alt="moto morini west yorkshire"
             />
           </a>
@@ -55,27 +59,27 @@ const Navbar = ({ toggle }) => {
           </a>
         </Link>
 
-        <Link href="/media">
+        <Link href="/about">
           <a
             className={
-              currentRoute === "/media"
+              currentRoute === "/about"
                 ? `${styles.nav__link} ${styles.active}`
                 : `${styles.nav__link}`
             }
           >
-            Media
+            About Us
           </a>
         </Link>
 
-        <Link href="/visit-us">
+        <Link href="/contact">
           <a
             className={
-              currentRoute === "/visit-us"
+              currentRoute === "/contact"
                 ? `${styles.nav__link} ${styles.active}`
                 : `${styles.nav__link}`
             }
           >
-            Visit Us
+            Contact Us
           </a>
         </Link>
       </div>

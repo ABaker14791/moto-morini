@@ -1,6 +1,7 @@
 import { useRef } from "react";
 // Styles
 import styles from "../styles/Home.module.scss";
+import "swiper/css";
 // Next imports
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +13,7 @@ import {
   useTransform,
   MotionValue,
 } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Logos
 import xCapeLogo from "../public/assets/x_cape_logo.png";
 import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
