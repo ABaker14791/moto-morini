@@ -18,67 +18,64 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import xCapeLogo from "../public/assets/x_cape_logo.png";
 import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
 // Bike images
-import seiemmezzoImage from "../public/assets/moto-morini_05_seiemmezzo-bianca-lato-sx-34.jpeg";
-import xCapeImage from "../public/assets/X-Cape_index.jpeg";
+import xCapeRed from "../public/assets/X-Cape_index.jpeg";
+import xCapeGold from "../public/assets/x-cape-index/X-Cape_gold.jpeg";
+import seiScrBlack from "../public/assets/scr-index/Seimmezzo-scr-black.jpeg";
+import seiStrWhite from "../public/assets/str-index/Seimmezzo-str-white.jpeg";
 
 const index = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.bike__wrapper}>
-        <motion.div
-          className={styles.bike__text}
-          initial={{ x: "-400px", opacity: 0 }}
-          animate={{ x: "0", opacity: 1 }}
-        >
-          <div className={styles.bike__logo}>
-            <Image
-              src={xCapeLogo}
-              width="500px"
-              height="119px"
-              alt="x-cape logo"
-            />
-          </div>
-          <p>
-            The All New Moto Morini X-Cape 650 really is stunning and packed
-            with high end tech and features that only enhance the overall riding
-            experience!
-          </p>
-        </motion.div>
-        <motion.div
-          className={styles.bike__image}
-          initial={{ y: "400px", opacity: 0 }}
-          animate={{ y: "0", opacity: 1 }}
-        >
-          <Image src={xCapeImage} alt="moto morini x-cape" />
-        </motion.div>
+      <motion.div
+        className={styles.bike__wrapper}
+        initial={{ y: "400px", opacity: 0 }}
+        animate={{ y: "0", opacity: 1 }}
+      >
+        <div className={styles.bike__logo}>
+          <Image
+            src={xCapeLogo}
+            width="500px"
+            height="119px"
+            alt="x-cape logo"
+          />
+        </div>
+        <div className={styles.bike__images}>
+          <Image src={xCapeRed} alt="moto morini x-cape" />
+          <Image src={xCapeGold} alt="motomorini x-cape gold edition" />
+        </div>
+        <p>
+          The All New Moto Morini X-Cape 650 really is stunning and packed with
+          high end tech and features that only enhance the overall riding
+          experience!
+        </p>
         <Link href="/xcape-details">
           <a className={styles.bike__button}>Discover more</a>
         </Link>
-      </div>
+      </motion.div>
 
-      <div className={styles.bike__wrapper}>
-        <motion.div className={styles.bike__text}>
-          <div className={styles.bike__logo}>
-            <Image
-              src={seiemmezzoLogo}
-              width="500px"
-              height="172px"
-              alt="seiemmezzo logo"
-            />
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-            possimus? Dolor corrupti alias, blanditiis in libero illo. In odit,
-            dolor minus excepturi pariatur quia veniam adipisci! Officiis,
-            consectetur ipsum. Praesentium.
-          </p>
-        </motion.div>
-
-        <Image src={seiemmezzoImage} alt="seiemmezzo bike" />
+      <motion.div className={styles.bike__wrapper}>
+        <div className={styles.bike__logo}>
+          <Image
+            src={seiemmezzoLogo}
+            width="500px"
+            height="172px"
+            alt="seiemmezzo logo"
+          />
+        </div>
+        <div className={styles.bike__images}>
+          <Image src={seiStrWhite} alt="seiemmezzo street white" />
+          <Image src={seiScrBlack} alt="seiemmezzo scrambler bike" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus?
+          Dolor corrupti alias, blanditiis in libero illo. In odit, dolor minus
+          excepturi pariatur quia veniam adipisci! Officiis, consectetur ipsum.
+          Praesentium.
+        </p>
         <Link href="/">
           <a className={styles.bike__button}>Discover more</a>
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };
