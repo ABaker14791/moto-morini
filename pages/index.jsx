@@ -1,8 +1,9 @@
 import { useRef } from "react";
 // Styles
 import styles from "../styles/Home.module.scss";
-import "swiper/css";
-// Next imports
+// components
+import XCapeSlider from "../components/XCapeSlider/XCapeSlider";
+
 import Image from "next/image";
 import Link from "next/link";
 // Animation
@@ -13,12 +14,11 @@ import {
   useTransform,
   MotionValue,
 } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
 // Logos
 import xCapeLogo from "../public/assets/x_cape_logo.png";
 import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
 // Bike images
-import xCapeRed from "../public/assets/X-Cape_index.jpeg";
+import xCapeRed from "../public/assets/x-cape-index/X-Cape_red.jpeg";
 import xCapeGold from "../public/assets/x-cape-index/X-Cape_gold.jpeg";
 import seiScrBlack from "../public/assets/scr-index/Seimmezzo-scr-black.jpeg";
 import seiStrWhite from "../public/assets/str-index/Seimmezzo-str-white.jpeg";
@@ -40,8 +40,12 @@ const index = () => {
           />
         </div>
         <div className={styles.bike__images}>
-          <Image src={xCapeRed} alt="moto morini x-cape" />
-          <Image src={xCapeGold} alt="motomorini x-cape gold edition" />
+          <div className={styles.bike__img}>
+            <XCapeSlider />
+          </div>
+          <div className={styles.bike__img}>
+            <Image src={xCapeGold} alt="motomorini x-cape gold edition" />
+          </div>
         </div>
         <p>
           The All New Moto Morini X-Cape 650 really is stunning and packed with

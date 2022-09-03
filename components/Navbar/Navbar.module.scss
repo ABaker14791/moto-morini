@@ -75,7 +75,8 @@
   text-transform: uppercase;
 
   &:hover {
-    color: v.$morini-red;
+    // color: v.$morini-red;
+    border-bottom: 1px solid v.$morini-red;
   }
 }
 

@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.5rem calc((100vw - 1000px) / 2);
+  overflow: hidden;
 
   @media screen and (max-width: 999px) {
     padding: 0.5rem 1rem;
@@ -32,6 +33,21 @@
 .bike__images {
   display: flex;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.bike__img {
+  width: 50%;
+
+  @media screen and (max-width: 1000px) {
+    max-width: fit-content;
+    width: 100%;
+  }
 }
 
 .bike__button {
