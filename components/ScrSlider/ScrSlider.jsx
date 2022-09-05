@@ -4,16 +4,16 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectFade } from "swiper";
 //  Images
-import xCapeRed from "../../public/assets/x-cape-index/X-Cape_red.jpeg";
-import xCapeWhite from "../../public/assets/x-cape-index/X-Cape_white.jpeg";
-import xCapeGray from "../../public/assets/x-cape-index/X-Cape_gray.jpeg";
+import ScrBlack from "../../public/assets/scr-index/Seimmezzo-scr-black.jpeg";
+import ScrBlue from "../../public/assets/scr-index/Seimmezzo-scr-blue.jpeg";
+import ScrGreen from "../../public/assets/scr-index/Seimmezzo-scr-green.jpeg";
 //  Styles
 import styles from "../../styles/BikeSlider.module.scss";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const XCapeSlider = () => {
+const ScrSlider = () => {
   return (
     <>
       <Swiper
@@ -25,17 +25,17 @@ const XCapeSlider = () => {
         className={styles.mySwiper}
       >
         <SwiperSlide className={styles.mySlide}>
-          <Image src={xCapeRed} alt="moto morini x-cape" />
+          <Image src={ScrBlack} alt="moto morini Scr" />
         </SwiperSlide>
         <SwiperSlide className={styles.mySlide}>
-          <Image src={xCapeWhite} alt="moto morini x-cape" />
+          <Image src={ScrBlue} alt="moto morini Scr" />
         </SwiperSlide>
         <SwiperSlide className={styles.mySlide}>
-          <Image src={xCapeGray} alt="moto morini x-cape" />
+          <Image src={ScrGreen} alt="moto morini Scr" />
         </SwiperSlide>
       </Swiper>
     </>
   );
 };
 
-export default XCapeSlider;
+export default ScrSlider;

@@ -3,6 +3,8 @@ import { useRef } from "react";
 import styles from "../styles/Home.module.scss";
 // components
 import XCapeSlider from "../components/XCapeSlider/XCapeSlider";
+import StrSlider from "../components/StrSlider/StrSlider";
+import ScrSlider from "../components/ScrSlider/ScrSlider";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -18,10 +20,7 @@ import {
 import xCapeLogo from "../public/assets/x_cape_logo.png";
 import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
 // Bike images
-import xCapeRed from "../public/assets/x-cape-index/X-Cape_red.jpeg";
 import xCapeGold from "../public/assets/x-cape-index/X-Cape_gold.jpeg";
-import seiScrBlack from "../public/assets/scr-index/Seimmezzo-scr-black.jpeg";
-import seiStrWhite from "../public/assets/str-index/Seimmezzo-str-white.jpeg";
 
 const index = () => {
   return (
@@ -67,8 +66,12 @@ const index = () => {
           />
         </div>
         <div className={styles.bike__images}>
-          <Image src={seiStrWhite} alt="seiemmezzo street white" />
-          <Image src={seiScrBlack} alt="seiemmezzo scrambler bike" />
+          <div className={styles.bike__img}>
+            <StrSlider />
+          </div>
+          <div className={styles.bike__img}>
+            <ScrSlider />
+          </div>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus?

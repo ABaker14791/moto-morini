@@ -42,11 +42,11 @@
 }
 
 .bike__img {
-  width: 50%;
+  max-width: 50%;
 
   @media screen and (max-width: 1000px) {
-    max-width: fit-content;
-    width: 100%;
+    // max-width: fit-content;
+    max-width: 100%;
   }
 }
 

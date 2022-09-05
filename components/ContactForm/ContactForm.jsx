@@ -29,7 +29,7 @@ const ContactForm = () => {
     <>
       <form ref={form} onSubmit={sendEmail} className={styles.contact__form}>
         <h3>Get in touch</h3>
-        <p>Enter yout Email below and we shall get back to you.</p>
+        <p>Enter your Email below and we shall get back to you.</p>
         <div className={styles.contact__formGroup}>
           <label>Name</label>
           <input type="text" name="user_name" />
