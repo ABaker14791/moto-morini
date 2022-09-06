@@ -11,7 +11,6 @@ import ScrGreen from "../../public/assets/scr-index/Seimmezzo-scr-green.jpeg";
 import styles from "../../styles/BikeSlider.module.scss";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 const ScrSlider = () => {
   return (
@@ -19,7 +18,6 @@ const ScrSlider = () => {
       <Swiper
         pagination={{ clickable: true }}
         modules={[Pagination, Navigation, EffectFade]}
-        navigation={true}
         speed={1200}
         slidesPerView={1}
         className={styles.mySwiper}

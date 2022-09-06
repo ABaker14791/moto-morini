@@ -11,7 +11,6 @@ import StrRed from "../../public/assets/str-index/Seimmezzo-str-red.jpeg";
 import styles from "../../styles/BikeSlider.module.scss";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 const StrSlider = () => {
   return (
@@ -19,7 +18,6 @@ const StrSlider = () => {
       <Swiper
         pagination={{ clickable: true }}
         modules={[Pagination, Navigation, EffectFade]}
-        navigation={true}
         speed={1200}
         slidesPerView={1}
         className={styles.mySwiper}

@@ -3,6 +3,7 @@ import { useRef } from "react";
 import styles from "../styles/Home.module.scss";
 // components
 import XCapeSlider from "../components/XCapeSlider/XCapeSlider";
+import XCapeGoldSlider from "../components/XCapeGoldSlider/XCapeGoldSlider";
 import StrSlider from "../components/StrSlider/StrSlider";
 import ScrSlider from "../components/ScrSlider/ScrSlider";
 
@@ -19,8 +20,6 @@ import {
 // Logos
 import xCapeLogo from "../public/assets/x_cape_logo.png";
 import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
-// Bike images
-import xCapeGold from "../public/assets/x-cape-index/X-Cape_gold.jpeg";
 
 const index = () => {
   return (
@@ -43,14 +42,9 @@ const index = () => {
             <XCapeSlider />
           </div>
           <div className={styles.bike__img}>
-            <Image src={xCapeGold} alt="motomorini x-cape gold edition" />
+            <XCapeGoldSlider />
           </div>
         </div>
-        <p>
-          The All New Moto Morini X-Cape 650 really is stunning and packed with
-          high end tech and features that only enhance the overall riding
-          experience!
-        </p>
         <Link href="/xcape-details">
           <a className={styles.bike__button}>Discover more</a>
         </Link>
@@ -73,12 +67,6 @@ const index = () => {
             <ScrSlider />
           </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus?
-          Dolor corrupti alias, blanditiis in libero illo. In odit, dolor minus
-          excepturi pariatur quia veniam adipisci! Officiis, consectetur ipsum.
-          Praesentium.
-        </p>
         <Link href="/">
           <a className={styles.bike__button}>Discover more</a>
         </Link>

@@ -4,9 +4,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectFade } from "swiper";
 //  Images
-import xCapeRed from "../../public/assets/x-cape-index/X-Cape_red.jpeg";
-import xCapeWhite from "../../public/assets/x-cape-index/X-Cape_white.jpeg";
-import xCapeGray from "../../public/assets/x-cape-index/X-Cape_gray.jpeg";
+import xCapeGold from "../../public/assets/X-cape-gold-index/X-Cape_gold.jpeg";
+import xCapeGold2 from "../../public/assets/x-cape-gold-index/X-Cape_gold2.jpeg";
 //  Styles
 import styles from "../../styles/BikeSlider.module.scss";
 import "swiper/css";
@@ -23,13 +22,10 @@ const XCapeSlider = () => {
         className={styles.mySwiper}
       >
         <SwiperSlide className={styles.mySlide}>
-          <Image src={xCapeRed} alt="moto morini x-cape" />
+          <Image src={xCapeGold} alt="moto morini x-cape" />
         </SwiperSlide>
         <SwiperSlide className={styles.mySlide}>
-          <Image src={xCapeWhite} alt="moto morini x-cape" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.mySlide}>
-          <Image src={xCapeGray} alt="moto morini x-cape" />
+          <Image src={xCapeGold2} alt="moto morini x-cape" />
         </SwiperSlide>
       </Swiper>
     </>
