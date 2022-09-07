@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectFade } from "swiper";
 //  Images
 import xCapeGold from "../../public/assets/X-cape-gold-index/X-Cape_gold.jpeg";
-import xCapeGold2 from "../../public/assets/x-cape-gold-index/X-Cape_gold2.jpeg";
+import xCapeGold2 from "../../public/assets/X-cape-gold-index/X-Cape_gold2.jpeg";
 //  Styles
 import styles from "../../styles/BikeSlider.module.scss";
 import "swiper/css";
