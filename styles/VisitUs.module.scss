@@ -3,4 +3,11 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
 }

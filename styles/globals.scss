@@ -11,3 +11,18 @@ body {
 .swiper-button-prev {
   color: lightgray !important;
 }
+
+.map-container {
+  width: 50%;
+  height: 70vh;
+  max-height: 600px;
+  padding: 2rem;
+  margin: 3rem 2rem 2rem 0;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

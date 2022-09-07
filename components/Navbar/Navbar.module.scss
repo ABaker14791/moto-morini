@@ -73,10 +73,13 @@
   cursor: pointer;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: 0.5s;
 
   &:hover {
-    // color: v.$morini-red;
-    border-bottom: 1px solid v.$morini-red;
+    // text color on hover
+    color: v.$morini-red;
+    // underline on hover
+    // box-shadow: 0 2px 0 v.$morini-red;
   }
 }
 

@@ -6,6 +6,12 @@
   justify-content: center;
   width: 50%;
   margin-bottom: 6rem;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .contact__formGroup {
