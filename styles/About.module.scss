@@ -1,7 +1,65 @@
 .container {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  height: 100vh;
+  align-items: center;
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 1200px;
+  line-height: 1.5;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.about__intro {
+  display: flex;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.about__team {
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.introText {
+  margin: 0 1rem 0 0;
+  line-height: 1.5;
+  font-size: 1.1;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.teamContainer {
+  display: flex;
+  margin-bottom: 6rem;
+
+  .riderImg {
+    width: 40%;
+  }
+
+  .riderDesc {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .riderImg {
+      width: 100%;
+    }
+
+    .riderDesc {
+      width: 100%;
+      padding: 0;
+    }
+  }
 }

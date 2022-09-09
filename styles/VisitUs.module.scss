@@ -1,13 +1,15 @@
 .container {
-  // height: 100vh;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  // padding: 0.5rem calc((100vw - 1000px) / 2);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    // padding: 1rem;
     box-sizing: border-box;
   }
 }

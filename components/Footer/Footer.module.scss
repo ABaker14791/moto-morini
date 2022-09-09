@@ -19,6 +19,18 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .footer__brand {
+      order: 3;
+    }
+
+    .footer__col {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .footer__copyright {
