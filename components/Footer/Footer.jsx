@@ -3,6 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 import akaLogo from "../../public/akaLogoW.svg";
+import {
+  FaFacebookSquare,
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -29,11 +35,24 @@ const Footer = () => {
             height="34px"
           />
         </div>
-        <div className={styles.footer__col}>
-          <h3>CONTACT</h3>
-          <li>right</li>
-          <li>right</li>
-          <li>right</li>
+        <div className={`${styles.footer__col} ${styles.footer__contact}`}>
+          <h3>Contact Us</h3>
+          <li>
+            <FaPhone />
+            &nbsp;01274 583903
+          </li>
+          <li>
+            <FaEnvelope />
+            &nbsp;sales@akaautomotive.co.uk
+          </li>
+          <li>
+            <FaFacebookSquare />
+            &nbsp;Facebook
+          </li>
+          <li>
+            <FaMapMarkerAlt />
+            &nbsp;AKA Automotive, Otley Rd, Shipley, BD17 7DU
+          </li>
         </div>
       </div>
       <div className={styles.footer__copyright}>

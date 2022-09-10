@@ -50,9 +50,19 @@
   justify-content: space-between;
 }
 
+.footer__contact {
+  list-style: none;
+  cursor: pointer;
+
+  li {
+    padding: 8px 0;
+  }
+}
+
 .footer__link {
   text-decoration: none;
   color: v.$bg-white;
+  padding: 8px 0;
 
   &:hover {
     color: v.$morini-gold;

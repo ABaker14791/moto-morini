@@ -67,7 +67,7 @@ const index = () => {
             <ScrSlider />
           </div>
         </div>
-        <Link href="/">
+        <Link href="/seiemmezzo-details">
           <a className={styles.bike__button}>Discover more</a>
         </Link>
       </motion.div>
