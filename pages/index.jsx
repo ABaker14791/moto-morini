@@ -61,9 +61,11 @@ const index = () => {
         </div>
         <div className={styles.bike__images}>
           <div className={styles.bike__img}>
+            SEIEMMEZZO STR
             <StrSlider />
           </div>
           <div className={styles.bike__img}>
+            SEIEMMEZZO SCR
             <ScrSlider />
           </div>
         </div>

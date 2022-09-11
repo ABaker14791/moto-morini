@@ -28,6 +28,7 @@
 
 .bike__logo {
   max-width: fit-content;
+  margin-bottom: 2rem;
 }
 
 .bike__images {
@@ -43,6 +44,8 @@
 
 .bike__img {
   max-width: 50%;
+  justify-content: center;
+  text-align: center;
 
   @media screen and (max-width: 1000px) {
     // max-width: fit-content;

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 import akaLogo from "../../public/akaLogoW.svg";
+import moriniLogo from "../../public/assets/MM_Logo.png";
 import {
   FaFacebookSquare,
   FaPhone,
@@ -27,13 +28,22 @@ const Footer = () => {
           </Link>
         </div>
         <div className={`${styles.footer__col} ${styles.footer__brand}`}>
-          <h3>Moto Morini</h3>
-          <Image
-            src={akaLogo}
-            alt="aka automotive logo"
-            width="204"
-            height="34px"
-          />
+          <div className={styles.moriniLogo}>
+            <Image
+              src={moriniLogo}
+              width="140px"
+              height="80px"
+              alt="moto morini west yorkshire"
+            />
+          </div>
+          <div className={styles.akaLogo}>
+            <Image
+              src={akaLogo}
+              alt="aka automotive logo"
+              width="204"
+              height="34px"
+            />
+          </div>
         </div>
         <div className={`${styles.footer__col} ${styles.footer__contact}`}>
           <h3>Contact Us</h3>
