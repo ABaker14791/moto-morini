@@ -1,0 +1,25 @@
+.conatainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderContainer {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  margin: 6rem 0;
+
+  &__item {
+    width: 50%;
+  }
+}
