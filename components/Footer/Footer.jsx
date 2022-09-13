@@ -20,11 +20,8 @@ const Footer = () => {
           <Link href="/xcape-details">
             <a className={styles.footer__link}>X-CAPE</a>
           </Link>
-          <Link href="/">
-            <a className={styles.footer__link}>Seiemmezzo STR</a>
-          </Link>
-          <Link href="/">
-            <a className={styles.footer__link}>Seiemmezzo SCR</a>
+          <Link href="/seiemmezzo-details">
+            <a className={styles.footer__link}>Seiemmezzo</a>
           </Link>
         </div>
         <div className={`${styles.footer__col} ${styles.footer__brand}`}>

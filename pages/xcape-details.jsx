@@ -38,7 +38,7 @@ const XCapeDetails = () => {
       <div className={styles.features__container}>
         <div className={styles.features__row}>
           <div className={styles.features__img}>
-            <Image src={featureImg1} alt="" />
+            <Image src={featureImg1} alt="" layout="responsive" />
           </div>
           <div className={styles.features__text}>
             <li>Large 7” TFT dash screen</li>
@@ -54,20 +54,19 @@ const XCapeDetails = () => {
             <li>Seat height: 820mm/845mm</li>
           </div>
           <div className={styles.features__img}>
-            <Image src={featureImg2} alt="" />
+            <Image src={featureImg2} alt="" layout="responsive" />
           </div>
         </div>
 
         <div className={styles.features__row}>
           <div className={styles.features__img}>
-            <Image src={featureImg3} alt="" />
+            <Image src={featureImg3} alt="" layout="responsive" />
           </div>
           <div className={styles.features__text}>
             <li>19" front wheel & Pirelli Tyres</li>
             <li>Switchable ABS</li>
-            <li>Marzocchi Forks</li>
             <li>Brembo Brakes</li>
-            <li>50 mm diameter front adjustable fork </li>
+            <li>50 mm diameter adjustable Marzocchi fork </li>
           </div>
         </div>
 
@@ -78,7 +77,7 @@ const XCapeDetails = () => {
             <li>Displacement: 649 cc</li>
           </div>
           <div className={styles.features__img}>
-            <Image src={featureImg4} alt="" />
+            <Image src={featureImg4} alt="" layout="responsive" />
           </div>
         </div>
       </div>

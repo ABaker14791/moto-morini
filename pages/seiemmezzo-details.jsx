@@ -18,6 +18,7 @@ const seiemmezzoDetails = () => {
     <div className={styles.container}>
       <div className={styles.hero}>
         <Image src={heroImg} alt="" />
+        <div className={styles.heading}>SEIEMMEZZO SCR / STR</div>
       </div>
       <div className={styles.logo}>
         <Image
@@ -33,17 +34,20 @@ const seiemmezzoDetails = () => {
       </div>
       <div className={styles.gallery}>
         <div className={styles.gallery__item}>
-          <Image src={featureImg1} alt="" />
+          <Image src={featureImg1} alt="" layout="responsive" />
         </div>
         <div className={styles.gallery__item}>
-          <Image src={featureImg2} alt="" />
+          <Image src={featureImg2} alt="" layout="responsive" />
         </div>
         <div className={styles.gallery__item}>
-          <Image src={featureImg3} alt="" />
+          <Image src={featureImg3} alt="" layout="responsive" />
         </div>
         <div className={styles.gallery__item}>
-          <Image src={featureImg4} alt="" />
+          <Image src={featureImg4} alt="" layout="responsive" />
         </div>
+      </div>
+      <div className={styles.media}>
+        <Image src={galleryImg1} alt="" layout="responsive" />
       </div>
     </div>
   );

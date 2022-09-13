@@ -4,6 +4,33 @@
   align-items: center;
 }
 
+// Hero styles
+.hero {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #fff;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .logo {
   margin: 4rem 0;
   display: flex;
@@ -15,11 +42,11 @@
 }
 
 .gallery {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 6rem 0;
 
   &__item {
-    width: 50%;
+    width: 100%;
   }
 }
