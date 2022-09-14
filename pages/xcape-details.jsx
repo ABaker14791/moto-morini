@@ -41,7 +41,7 @@ const XCapeDetails = () => {
             <Image src={featureImg1} alt="" layout="responsive" />
           </div>
           <div className={styles.features__text}>
-            <li>Large 7” TFT dash screen</li>
+            <li>Large 7&quot; TFT dash screen</li>
             <li>Music & Phone Connectivity</li>
             <li>Double USB Charger</li>
           </div>
@@ -63,7 +63,7 @@ const XCapeDetails = () => {
             <Image src={featureImg3} alt="" layout="responsive" />
           </div>
           <div className={styles.features__text}>
-            <li>19" front wheel & Pirelli Tyres</li>
+            <li>19&quot; front wheel & Pirelli Tyres</li>
             <li>Switchable ABS</li>
             <li>Brembo Brakes</li>
             <li>50 mm diameter adjustable Marzocchi fork </li>
