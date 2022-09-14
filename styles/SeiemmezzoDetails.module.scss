@@ -28,6 +28,10 @@
     font-size: 3rem;
     width: 100%;
     text-align: center;
+
+    @media screen and (max-width: 550px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -39,12 +43,20 @@
 
 .sliderContainer {
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 6rem 0;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 
   &__item {
     width: 100%;
