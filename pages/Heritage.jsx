@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Heritage.module.scss";
 
-const Heritage = () => {
+const heritage = () => {
   return (
     <div className={styles.container}>
       <section>
@@ -209,4 +209,4 @@ const Heritage = () => {
   );
 };
 
-export default Heritage;
+export default heritage;
