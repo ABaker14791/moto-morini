@@ -14,7 +14,9 @@ const Contact = () => {
       <div className={styles.about__intro}>
         <div className={styles.introText}>
           <div className={styles.introTitle}>
-            <h2>AKA Automotive – Enthusiast Driven</h2>
+            <h2>
+              AKA Automotive – Enthusiast Driven - Moto Morini Main Dealer
+            </h2>
           </div>
           <p>
             Situated in the heart of Shipley and only a stones throw away from
@@ -41,13 +43,19 @@ const Contact = () => {
             <p>
               Craig ‘AKA’ Atkinson heading up the buying team. Craig brings a
               wealth of knowledge and a history of racing to the team including
-              some fantastic accolades, take a look below! Manx GP Double Race
-              Winner 2006 (Genuine in the week double) Record of the Closest
-              ever finish around the TT Course 0.01 119.997 MPH Lap, Honda
-              CBR600 RR in 2006 IOM 100 Years Centenary Competitor NW200
-              Competitor Ulster GP Competitor 2nd Fastest Newcomer Macau GP
-              Competitor American 3hr Endurance Podium Finisher with Milky
-              Quayle
+              some fantastic accolades, take a look below!
+              <li>
+                Manx GP Double Race Winner 2006 (Genuine in the week double)
+              </li>
+              <li>
+                Record of the Closest ever finish around the TT Course 0.01
+              </li>
+              <li>119.997 MPH Lap, Honda CBR600 RR in 2006</li>
+              <li>IOM 100 Years Centenary</li>
+              <li>Competitor NW200</li>
+              <li>Competitor Ulster GP Competitor 2nd Fastest Newcomer</li>
+              <li>Macau GP Competitor</li>
+              <li>American 3hr Endurance Podium Finisher with Milky Quayle</li>
             </p>
           </div>
         </div>

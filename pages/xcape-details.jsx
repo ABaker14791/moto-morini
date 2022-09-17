@@ -28,7 +28,7 @@ const XCapeDetails = () => {
       <div className={styles.details__hero}>
         <Image src={heroImg} alt="" />
         <div className={styles.heading}>
-          All-new Moto Morini X-Cape 650 adventure tourer
+          All-new Moto Morini X-Cape 650 Adventure Tourer
         </div>
       </div>
       <div className={styles.details__title}>
