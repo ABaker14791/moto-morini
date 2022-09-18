@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Timeline.module.scss";
+import MoriniIcon from "./MoriniIcon";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -16,7 +18,14 @@ const Timeline = ({ timelineItems }) => {
             contentStyle={{ background: "#fff", color: "#000" }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             date={item.date}
-            iconStyle={{ background: "#ff0000", color: "#fff" }}
+            iconStyle={{
+              background: "#fff",
+              color: "#ff0000",
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+            }}
+            icon={<MoriniIcon />}
             key={item.date}
           >
             <h3 className="vertical-timeline-element-title">{item.title}</h3>
