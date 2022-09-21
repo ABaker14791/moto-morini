@@ -13,7 +13,7 @@ const ContactMap = () => {
 function Map() {
   return (
     <GoogleMap
-      zoom={15}
+      zoom={16}
       center={{ lat: 53.835489, lng: -1.77444 }}
       mapContainerClassName="map-container"
     >
