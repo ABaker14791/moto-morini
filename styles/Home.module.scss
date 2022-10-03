@@ -19,6 +19,42 @@
   margin: 30px 0 80px 0;
 }
 
+.bike__heading {
+  margin-bottom: 1em;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  color: v.$icon-grey;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.bike__heading:before,
+.bike__heading:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid v.$morini-gold;
+
+  @media screen and (max-width: 1150px) {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.bike__heading:after {
+  margin: 0 -55% 0 0.5em;
+}
+
+.seiHead {
+  margin: 3em 0;
+}
+
 .bike__text {
   display: flex;
   flex-direction: column;
@@ -28,12 +64,12 @@
 
 .bike__logo {
   max-width: fit-content;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .bike__images {
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
@@ -48,13 +84,12 @@
   text-align: center;
 
   @media screen and (max-width: 1000px) {
-    // max-width: fit-content;
     max-width: 100%;
   }
 }
 
 .bike__button {
-  background-color: v.$morini-gold;
+  background-color: v.$morini-red;
   color: v.$bg-white;
   padding: 1rem 1.6rem;
   border-radius: 5px;

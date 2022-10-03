@@ -37,6 +37,9 @@ const index = () => {
             alt="x-cape logo"
           />
         </div>
+        <h2 className={styles.bike__heading}>
+          Discover the all-new Moto Morini X-Cape 650 adventure tourer
+        </h2>
         <div className={styles.bike__images}>
           <div className={styles.bike__img}>
             <XCapeSlider />
@@ -59,6 +62,10 @@ const index = () => {
             alt="seiemmezzo logo"
           />
         </div>
+
+        <h2 className={`${styles.bike__heading} ${styles.seiHead}`}>
+          All-new Moto Morini Seiemmezzo Street and Scrambler range
+        </h2>
         <div className={styles.bike__images}>
           <div className={styles.bike__img}>
             SEIEMMEZZO STR
