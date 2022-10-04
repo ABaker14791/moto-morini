@@ -1,0 +1,21 @@
+@use "../../styles/variables" as v;
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.enquireBtn {
+  //   width: max-content;
+  background-color: v.$morini-red;
+  color: v.$bg-white;
+  margin: 2rem 0 4rem 0;
+  padding: 1rem 1.6rem;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 70%;
+  }
+}

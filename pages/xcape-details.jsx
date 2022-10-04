@@ -3,6 +3,8 @@ import xCapePhotos from "../xCapeImages";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "../styles/xCapeDetails.module.scss";
+// Components
+import EnquireButton from "../components/EnquireButton/EnquireButton";
 // Images
 import heroImg from "../public/assets/x-cape-details/1MC0637-2a483352.jpeg";
 import xCapeLogo from "../public/assets/x_cape_logo.png";
@@ -33,6 +35,7 @@ const XCapeDetails = () => {
       </div>
       <div className={styles.details__title}>
         <Image src={xCapeLogo} alt="" />
+
         <h2>KEY FEATURES</h2>
       </div>
       <div className={styles.features__container}>
@@ -121,6 +124,8 @@ const XCapeDetails = () => {
           })}
         </motion.div>
       </motion.div>
+
+      <EnquireButton />
     </div>
   );
 };
