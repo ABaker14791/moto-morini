@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "../EnquireButton/EnquireButton.module.scss";
+import Link from "next/link";
 
 const EnquireButton = () => {
   return (
     <div className={styles.button__container}>
-      <div className={styles.enquireBtn}>Enquire Now</div>
+      <Link href="/contact">
+        <a className={styles.enquireBtn}>Enquire Now</a>
+      </Link>
     </div>
   );
 };

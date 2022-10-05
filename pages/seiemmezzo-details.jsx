@@ -4,6 +4,7 @@ import styles from "../styles/SeiemmezzoDetails.module.scss";
 //  Components
 import StrSlider from "../components/StrSlider/StrSlider";
 import ScrSlider from "../components/ScrSlider/ScrSlider";
+import EnquireButton from "../components/EnquireButton/EnquireButton";
 // Images
 import heroImg from "../public/assets/seiemmezzo-details/hero.jpeg";
 import featureImg1 from "../public/assets/seiemmezzo-details/led-headlight.jpeg";
@@ -46,6 +47,9 @@ const seiemmezzoDetails = () => {
           <Image src={featureImg4} alt="" layout="responsive" />
         </div>
       </div>
+
+      <EnquireButton />
+
       <div className={styles.media}>
         <Image src={galleryImg1} alt="" layout="responsive" />
       </div>
