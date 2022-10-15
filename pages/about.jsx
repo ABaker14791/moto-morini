@@ -40,7 +40,7 @@ const Contact = () => {
           </div>
           <div className={styles.riderDesc}>
             <h3>Craig Atkinson</h3>
-            <p>
+            <ul>
               Craig ‘AKA’ Atkinson heading up the buying team. Craig brings a
               wealth of knowledge and a history of racing to the team including
               some fantastic accolades, take a look below!
@@ -56,7 +56,7 @@ const Contact = () => {
               <li>Competitor Ulster GP Competitor 2nd Fastest Newcomer</li>
               <li>Macau GP Competitor</li>
               <li>American 3hr Endurance Podium Finisher with Milky Quayle</li>
-            </p>
+            </ul>
           </div>
         </div>
         <div className={styles.teamContainer}>

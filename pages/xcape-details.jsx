@@ -115,9 +115,9 @@ const XCapeDetails = () => {
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
         >
-          {xCapePhotos.map((xCapePhoto) => {
+          {xCapePhotos.map((xCapePhoto, index) => {
             return (
-              <motion.div className={styles.carousel__item} key={xCapePhoto}>
+              <motion.div className={styles.carousel__item} key={index}>
                 <Image src={xCapePhoto} alt="x-cape gallery" />
               </motion.div>
             );
