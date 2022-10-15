@@ -1,33 +1,30 @@
 import React, { useRef } from "react";
 import styles from "./ContactForm.module.scss";
-// import emailjs from '@emailjs/browser'; TODO: Install and setup emailJS
 
 const ContactForm = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  async function handleOnSubmit(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+    const formData = {};
+
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+
+    await fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
+  }
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail} className={styles.contact__form}>
+      <form
+        method="post"
+        onSubmit={handleOnSubmit}
+        className={styles.contact__form}
+      >
         <h3>Get in touch</h3>
         <p>Enter your Email below and we shall get back to you.</p>
         <div className={styles.contact__formGroup}>

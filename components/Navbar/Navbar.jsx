@@ -17,12 +17,16 @@ const Navbar = ({ toggle }) => {
     <div className={styles.nav}>
       <div className={styles.nav__preHeader}>
         <div className={styles.nav__akaLogo}>
-          <Image
-            src={akaLogo}
-            alt="aka automotive logo"
-            width="204"
-            height="34px"
-          />
+          <Link href="https://akaautomotive.co.uk/">
+            <a>
+              <Image
+                src={akaLogo}
+                alt="aka automotive logo"
+                width="204"
+                height="34px"
+              />
+            </a>
+          </Link>
         </div>
         <p className={styles.nav__phoneNo}>01274&nbsp;583903</p>
       </div>
