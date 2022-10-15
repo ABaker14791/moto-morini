@@ -3,7 +3,8 @@ import styles from "../styles/About.module.scss";
 import Image from "next/image";
 
 // Iamges
-import showroomImg from "../public/assets/img_6992.jpeg";
+// import showroomImg from "../public/assets/img_6992.jpeg";
+import showroomImg from "../public/assets/IMG_2701.jpeg";
 import charlieImg from "../public/assets/crhtrack.jpeg";
 import craigImg from "../public/assets/ridingphoto1.png";
 
@@ -29,7 +30,7 @@ const Contact = () => {
           </p>
         </div>
         <div className={styles.introImg}>
-          <Image src={showroomImg} alt="showroom" />
+          <Image src={showroomImg} alt="showroom" width={640} height={480} />
         </div>
       </div>
       <div className={styles.about__team}>
