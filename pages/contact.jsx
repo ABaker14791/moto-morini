@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 // Styles
 import styles from "../styles/VisitUs.module.scss";
 // Components
@@ -8,19 +9,28 @@ import ParkingMap from "../components/ParkingMap/ParkingMap";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.contact__row}>
-        <Map2 />
-        <ContactForm />
+    <>
+      <Head>
+        <title>Contact - Moto Morini West Yorkshire</title>
+        <meta name="description" content="Moto Morini West Yorkshire" />
+      </Head>
+
+      <div className={styles.container}>
+        <div className={styles.contact__row}>
+          <Map2 />
+          <ContactForm />
+        </div>
+        <div className={styles.contact__parkingMap}>
+          <h3 className={styles.contact__parkingHeading}>
+            Parking to the rear
+          </h3>
+          <p className={styles.contact__parkingText}>
+            Parking can be found to the rear of the showroom from Otley Road.
+          </p>
+          <ParkingMap />
+        </div>
       </div>
-      <div className={styles.contact__parkingMap}>
-        <h3 className={styles.contact__parkingHeading}>Parking to the rear</h3>
-        <p className={styles.contact__parkingText}>
-          Parking can be found to the rear of the showroom from Otley Road.
-        </p>
-        <ParkingMap />
-      </div>
-    </div>
+    </>
   );
 };
 

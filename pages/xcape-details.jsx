@@ -3,6 +3,7 @@ import xCapePhotos from "../xCapeImages";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "../styles/xCapeDetails.module.scss";
+import Head from "next/head";
 // Components
 import EnquireButton from "../components/EnquireButton/EnquireButton";
 // Images
@@ -26,107 +27,114 @@ const XCapeDetails = () => {
   }, []);
 
   return (
-    <div>
-      <div className={styles.details__hero}>
-        <Image src={heroImg} alt="" />
-        <div className={styles.heading}>
-          All-new Moto Morini X-Cape 650 Adventure Tourer
-        </div>
-      </div>
-      <div className={styles.details__title}>
-        <Image src={xCapeLogo} alt="" />
+    <>
+      <Head>
+        <title>Moto Morini X-Cape</title>
+        <meta name="description" content="Moto Morini X-Cape Details" />
+      </Head>
 
-        <h2>KEY FEATURES</h2>
-      </div>
-      <div className={styles.features__container}>
-        <div className={styles.features__row}>
-          <div className={styles.features__img}>
-            <Image src={featureImg1} alt="" layout="responsive" />
+      <div>
+        <div className={styles.details__hero}>
+          <Image src={heroImg} alt="" />
+          <div className={styles.heading}>
+            All-new Moto Morini X-Cape 650 Adventure Tourer
           </div>
-          <div className={styles.features__text}>
-            <li>Large 7&quot; TFT dash screen</li>
-            <li>Music & Phone Connectivity</li>
-            <li>Double USB Charger</li>
+        </div>
+        <div className={styles.details__title}>
+          <Image src={xCapeLogo} alt="" />
+
+          <h2>KEY FEATURES</h2>
+        </div>
+        <div className={styles.features__container}>
+          <div className={styles.features__row}>
+            <div className={styles.features__img}>
+              <Image src={featureImg1} alt="" layout="responsive" />
+            </div>
+            <div className={styles.features__text}>
+              <li>Large 7&quot; TFT dash screen</li>
+              <li>Music & Phone Connectivity</li>
+              <li>Double USB Charger</li>
+            </div>
+          </div>
+
+          <div className={styles.features__row}>
+            <div className={styles.features__text}>
+              <li>Protective Bars</li>
+              <li>Dry weight: 213 kg</li>
+              <li>Seat height: 820mm/845mm</li>
+            </div>
+            <div className={styles.features__img}>
+              <Image src={featureImg2} alt="" layout="responsive" />
+            </div>
+          </div>
+
+          <div className={styles.features__row}>
+            <div className={styles.features__img}>
+              <Image src={featureImg3} alt="" layout="responsive" />
+            </div>
+            <div className={styles.features__text}>
+              <li>19&quot; front wheel & Pirelli Tyres</li>
+              <li>Switchable ABS</li>
+              <li>Brembo Brakes</li>
+              <li>50 mm diameter adjustable Marzocchi fork </li>
+            </div>
+          </div>
+
+          <div className={styles.features__row}>
+            <div className={styles.features__text}>
+              <li>LED Lights</li>
+              <li>Maximum power: 44kW / 60hp</li>
+              <li>Displacement: 649 cc</li>
+            </div>
+            <div className={styles.features__img}>
+              <Image src={featureImg4} alt="" layout="responsive" />
+            </div>
           </div>
         </div>
 
-        <div className={styles.features__row}>
-          <div className={styles.features__text}>
-            <li>Protective Bars</li>
-            <li>Dry weight: 213 kg</li>
-            <li>Seat height: 820mm/845mm</li>
+        <div className={styles.variant__container}>
+          <div className={styles.variant__item}>
+            <h3>Red Passion</h3>
+            <Image src={variantImg1} alt="" />
           </div>
-          <div className={styles.features__img}>
-            <Image src={featureImg2} alt="" layout="responsive" />
+          <div className={styles.variant__item}>
+            <h3>Smoky Anthracite</h3>
+            <Image src={variantImg2} alt="" />
           </div>
-        </div>
-
-        <div className={styles.features__row}>
-          <div className={styles.features__img}>
-            <Image src={featureImg3} alt="" layout="responsive" />
-          </div>
-          <div className={styles.features__text}>
-            <li>19&quot; front wheel & Pirelli Tyres</li>
-            <li>Switchable ABS</li>
-            <li>Brembo Brakes</li>
-            <li>50 mm diameter adjustable Marzocchi fork </li>
+          <div className={styles.variant__item}>
+            <h3>Carrara White</h3>
+            <Image src={variantImg3} alt="" />
           </div>
         </div>
 
-        <div className={styles.features__row}>
-          <div className={styles.features__text}>
-            <li>LED Lights</li>
-            <li>Maximum power: 44kW / 60hp</li>
-            <li>Displacement: 649 cc</li>
-          </div>
-          <div className={styles.features__img}>
-            <Image src={featureImg4} alt="" layout="responsive" />
-          </div>
+        <div className={styles.variant__gold}>
+          <h3>Gold wheels edition</h3>
+          <Image src={variantImgGold} alt="" />
         </div>
-      </div>
 
-      <div className={styles.variant__container}>
-        <div className={styles.variant__item}>
-          <h3>Red Passion</h3>
-          <Image src={variantImg1} alt="" />
-        </div>
-        <div className={styles.variant__item}>
-          <h3>Smoky Anthracite</h3>
-          <Image src={variantImg2} alt="" />
-        </div>
-        <div className={styles.variant__item}>
-          <h3>Carrara White</h3>
-          <Image src={variantImg3} alt="" />
-        </div>
-      </div>
-
-      <div className={styles.variant__gold}>
-        <h3>Gold wheels edition</h3>
-        <Image src={variantImgGold} alt="" />
-      </div>
-
-      <motion.div
-        ref={carousel}
-        className={styles.carousel}
-        whileTap={{ cursor: "grabbing" }}
-      >
         <motion.div
-          className={styles.innerCarousel}
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
+          ref={carousel}
+          className={styles.carousel}
+          whileTap={{ cursor: "grabbing" }}
         >
-          {xCapePhotos.map((xCapePhoto, index) => {
-            return (
-              <motion.div className={styles.carousel__item} key={index}>
-                <Image src={xCapePhoto} alt="x-cape gallery" />
-              </motion.div>
-            );
-          })}
+          <motion.div
+            className={styles.innerCarousel}
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+          >
+            {xCapePhotos.map((xCapePhoto, index) => {
+              return (
+                <motion.div className={styles.carousel__item} key={index}>
+                  <Image src={xCapePhoto} alt="x-cape gallery" />
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
-      </motion.div>
 
-      <EnquireButton />
-    </div>
+        <EnquireButton />
+      </div>
+    </>
   );
 };
 

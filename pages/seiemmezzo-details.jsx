@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/SeiemmezzoDetails.module.scss";
+import Head from "next/head";
 //  Components
 import StrSlider from "../components/StrSlider/StrSlider";
 import ScrSlider from "../components/ScrSlider/ScrSlider";
@@ -16,44 +17,50 @@ import seiemmezzoLogo from "../public/assets/Seiemmezzo-logo.png";
 
 const seiemmezzoDetails = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.hero}>
-        <Image src={heroImg} alt="" />
-        <div className={styles.heading}>SEIEMMEZZO SCR / STR</div>
-      </div>
-      <div className={styles.logo}>
-        <Image
-          src={seiemmezzoLogo}
-          width="500px"
-          height="172px"
-          alt="seiemmezzo logo"
-        />
-      </div>
-      <div className={styles.sliderContainer}>
-        <StrSlider />
-        <ScrSlider />
-      </div>
-      <div className={styles.gallery}>
-        <div className={styles.gallery__item}>
-          <Image src={featureImg1} alt="" layout="responsive" />
+    <>
+      <Head>
+        <title>Moto Morini Seiemmezzo</title>
+        <meta name="description" content="Moto Morini Seiemmezzo Details" />
+      </Head>
+      <div className={styles.container}>
+        <div className={styles.hero}>
+          <Image src={heroImg} alt="" />
+          <div className={styles.heading}>SEIEMMEZZO SCR / STR</div>
         </div>
-        <div className={styles.gallery__item}>
-          <Image src={featureImg2} alt="" layout="responsive" />
+        <div className={styles.logo}>
+          <Image
+            src={seiemmezzoLogo}
+            width="500px"
+            height="172px"
+            alt="seiemmezzo logo"
+          />
         </div>
-        <div className={styles.gallery__item}>
-          <Image src={featureImg3} alt="" layout="responsive" />
+        <div className={styles.sliderContainer}>
+          <StrSlider />
+          <ScrSlider />
         </div>
-        <div className={styles.gallery__item}>
-          <Image src={featureImg4} alt="" layout="responsive" />
+        <div className={styles.gallery}>
+          <div className={styles.gallery__item}>
+            <Image src={featureImg1} alt="" layout="responsive" />
+          </div>
+          <div className={styles.gallery__item}>
+            <Image src={featureImg2} alt="" layout="responsive" />
+          </div>
+          <div className={styles.gallery__item}>
+            <Image src={featureImg3} alt="" layout="responsive" />
+          </div>
+          <div className={styles.gallery__item}>
+            <Image src={featureImg4} alt="" layout="responsive" />
+          </div>
         </div>
-      </div>
 
-      <EnquireButton />
+        <EnquireButton />
 
-      <div className={styles.media}>
-        <Image src={galleryImg1} alt="" layout="responsive" />
+        <div className={styles.media}>
+          <Image src={galleryImg1} alt="" layout="responsive" />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
