@@ -35,7 +35,7 @@ const XCapeDetails = () => {
 
 			<div>
 				<div className={styles.details__hero}>
-					<Image src={heroImg} alt="" />
+					<Image src={heroImg} alt="" width={1620} height={1080} fill="true" />
 					<div className={styles.heading}>
 						All-new Moto Morini X-Cape 650 Adventure Tourer
 					</div>
@@ -109,7 +109,13 @@ const XCapeDetails = () => {
 
 				<div className={styles.variant__gold}>
 					<h3>Gold wheels edition</h3>
-					<Image src={variantImgGold} alt="" width={1620} height={1080} fill />
+					<Image
+						src={variantImgGold}
+						alt=""
+						width={1620}
+						height={1080}
+						fill="true"
+					/>
 				</div>
 
 				<motion.div
