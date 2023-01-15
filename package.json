@@ -24,6 +24,7 @@
     "react-icons": "^4.4.0",
     "react-vertical-timeline-component": "^3.5.2",
     "sass": "^1.54.5",
+    "sib-api-v3-sdk": "^8.5.0",
     "swiper": "^8.3.2"
   },
   "devDependencies": {
