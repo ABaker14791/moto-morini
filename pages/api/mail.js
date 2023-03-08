@@ -25,16 +25,20 @@ export default async function (req, res) {
 			message: contactData.message,
 		},
 	};
-	try {
-		apiInstance.sendTransacEmail(sendSmtpEmail).then(
-			function (data) {
-				console.log("API called successfully. Returned data: " + data);
-			},
-			function (error) {
-				console.error(error);
-			}
-		);
-	} catch (err) {
-		res.status(500).json({ error: "failed to send email" });
+	if (req.method === "POST") {
+		try {
+			apiInstance.sendTransacEmail(sendSmtpEmail).then(
+				function (data) {
+					console.log("API called successfully. Returned data: " + data);
+				},
+				function (error) {
+					console.error(error);
+				}
+			);
+		} catch (err) {
+			res.status(500).json({ error: "failed to send email" });
+		}
+	} else {
+		return res.status(500).json({ error: "failed to send email" });
 	}
 }
