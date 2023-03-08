@@ -30,6 +30,9 @@ export default async function (req, res) {
 			apiInstance.sendTransacEmail(sendSmtpEmail).then(
 				function (data) {
 					console.log("API called successfully. Returned data: " + data);
+					res
+						.status(200)
+						.json({ success: true, message: "Email sent successfully" });
 				},
 				function (error) {
 					console.error(error);
